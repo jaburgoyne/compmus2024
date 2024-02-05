@@ -5,7 +5,7 @@ date: "Block 4"
 output: 
   flexdashboard::flex_dashboard:
     storyboard: true
-    theme: journal
+    theme: yeti
     self_contained: false
 ---
 
