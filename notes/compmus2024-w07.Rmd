@@ -32,7 +32,7 @@ You can download the raw source code for these lecture notes [here](compmus2024-
 
 ## Course Meeting Plan
 
-### Wednesday · 45 February · Lecture
+### Wednesday · 15 February · Lecture
 
 - Course intro and demo portfolio (10 min)
 - Lecture: What is computational musicology? (15 min)
