@@ -1,18 +1,34 @@
 ---
 title: "Week 8 · Chroma Features"
 author: "John Ashley Burgoyne"
-date: "22 February 2023"
+date: "21 February 2024"
 output: 
   html_document:
     toc: true
-    theme: journal
+    theme:
+      heading_font:
+        google: 
+          family: Rajdhani
+          wght: 700
+      base_font:
+        google: Fira Sans
+      code_font:
+        google: Fira Mono
+      bg: "#FFFFFF"
+      fg: "#212529" 
+      primary: "#2b2bee"
+      secondary: "#39d7b8"
+      success: "#39d7b8"
+      danger: "#fa5577"
+      warning: "#ffb14c"
+      info: "#0cc7f1"
 ---
 
 You can download the raw source code for these lecture notes [here](compmus2023-w08.Rmd).
 
 ## Course Meeting Plan
 
-### Wednesday · 22 February · Lecture
+### Wednesday · 21 February · Lecture
 
 - Video: [Antescofo](https://youtu.be/gsYhDp2VXMo) (10 min)
 - Lecture: What are chroma features? (20 min)
@@ -22,7 +38,7 @@ You can download the raw source code for these lecture notes [here](compmus2023-
 - Plenary Discussion: Breakout findings (5 min)
 - Lecture: MIR features and music cognition (15 min)
 
-### Wednesday · 22 February · Lab
+### Wednesday · 21 February · Lab
 
 - Tutorial: Github, RStudio, and flexdashboard (20 min)
 - Demo: Chromagrams (10 min)
@@ -31,8 +47,6 @@ You can download the raw source code for these lecture notes [here](compmus2023-
 - Demo: compmus_long_distance (10 mins)
 - Breakout: Dynamic time warping (15 mins)
 - Plenary Discussion: Breakout findings (10 mins)
-
-The Zoom breakout groups will be assigned at random. If you need help during any of the breakout sessions, please click the Help button, and the instructor or a TA will come to you.
 
 ## Breakout 1: Chroma and Tuning
 
@@ -48,7 +62,7 @@ In this breakout group, you will start working with chromagrams in R, and how to
 
 ### Installing `compmus`
 
-Just once, you need to install the `compmus` package, a special package I wrote for this course to sand off some rough edges in `spotifyr`. You can do so with the following line of code:
+Just once, you need to install the `compmus` package, a special package I wrote for this course to sand off some rough edges in `spotifyr`. First, you will need to install the `remotes` package from the Tools menu. Then you can install compmus with the following line of code:
 
 ```{r, eval = FALSE}
 remotes::install_github('jaburgoyne/compmus')
