@@ -1,7 +1,7 @@
 ---
 title: "Week 7 · Computational Musicology and (Audio) Visualisation"
 author: "John Ashley Burgoyne"
-date: "15 February 2023"
+date: "14 February 2024"
 output: 
   html_document:
     toc: true
@@ -32,7 +32,7 @@ You can download the raw source code for these lecture notes [here](compmus2024-
 
 ## Course Meeting Plan
 
-### Wednesday · 15 February · Lecture
+### Wednesday · 14 February · Lecture
 
 - Course intro and demo portfolio (10 min)
 - Lecture: What is computational musicology? (15 min)
@@ -44,7 +44,7 @@ You can download the raw source code for these lecture notes [here](compmus2024-
 
 If you want some distraction *after* the lecture, have a look at the [Sources of Good Data Visualisations](https://canvas.uva.nl/courses/44721/pages/sources-of-sometimes-good-data-visualisations?module_item_id=1913347) on Canvas.
 
-### Wednesday · 15 February · Lab
+### Wednesday · 14 February · Lab
 
 If you have time before this lab, [try to connect your portfolio to Spotify](https://canvas.uva.nl/courses/44721/pages/connecting-your-portfolio-to-spotify?module_item_id=1913386). If you get stuck, your TA will help you during the lab session.
 
