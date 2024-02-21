@@ -18,6 +18,7 @@ library(protoclust)
 library(cowplot)
 library(spotifyr)
 library(compmus)
+knitr::opts_chunk$set(cache = TRUE, cache.lazy = FALSE)
 ```
 
 ### Welcome to Computational Musicology 2024!
