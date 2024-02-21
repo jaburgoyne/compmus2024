@@ -5,9 +5,30 @@ date: "Block 4"
 output: 
   flexdashboard::flex_dashboard:
     storyboard: true
-    theme: yeti
     self_contained: false
+    source: https://github.com/jaburgoyne/compmus2024/blob/main/index.Rmd
+    theme:
+      heading_font:
+        google: 
+          family: Rajdhani
+          wght: 700
+      base_font:
+        google: Fira Sans
+      code_font:
+        google: Fira Code
+      bg: "#FFFFFF"
+      fg: "#212529" 
+      primary: "#2b2bee"
+      secondary: "#39d7b8"
+      success: "#39d7b8"
+      danger: "#fa5577"
+      warning: "#ffb14c"
+      info: "#0cc7f1"
 ---
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(cache = TRUE)
+```
 
 ```{r, setup}
 library(tidyverse)
@@ -23,14 +44,11 @@ knitr::opts_chunk$set(cache = TRUE, cache.lazy = FALSE)
 
 ### Welcome to Computational Musicology 2024!
 
-Welcome to Computational Musicology 2024!
+Welcome to Computational Musicology 2024! This storyboard contains further examples from each week to inspire you.
 
-This page will host lecture notes and exercises for each week, as well as further examples to inspire you.
+You can access the lecture notes at the following links.
 
-For now, have a quick look at some of the exmaple to get an idea of what will be possible for you by the end of the course, and then focus on 'What Makes a Good Corpus?'.
-
-In a couple weeks, you will have your own storyboard and may want to look at exactly how I created this one. 
-You can download the raw source code [here](./index.Rmd).
+  - [Week 7 · Computational Musicology and (Audio) Visualisation](./notes/compmus2024-w07.html)
 
 ### What makes a good corpus?
 
@@ -476,7 +494,7 @@ The piece does not follow common-era tonal conventions, and the key estimates ar
 
 ### How am I supposed to dance when I can't find the beat? [temporal features]
 
-```{r}
+```{r dance}
 get_tidy_audio_analysis('6PJasPKAzNLSOzxeAH33j2') |> 
   tempogram(window_size = 8, hop_size = 1, cyclic = FALSE) |> 
   ggplot(aes(x = time, y = bpm, fill = power)) + 
@@ -553,7 +571,7 @@ The song titles make it clear that the over-arching them of this list has more t
 
 ### Classifying independent workouts
 
-```{r workouts}
+```{r workouts, cache.lazy = FALSE}
 pop <- get_playlist_audio_features("spotify", "37i9dQZF1DWWEcRhUVtL8n")
 party <- get_playlist_audio_features("spotify", "37i9dQZF1DWTujiC7wfofZ")
 workout <- get_playlist_audio_features("spotify", "37i9dQZF1DWZq91oLsHZvy")
