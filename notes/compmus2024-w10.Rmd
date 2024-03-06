@@ -335,14 +335,14 @@ As an example, let's consider the difference between Spotify's 'Sound of' playli
 ```{r}
 bebop <-
   get_playlist_audio_features(
-    "thesoundsofspotify",
+    "",
     "55s8gstHcaCyfU47mQgLrB"
   ) |>
   slice(1:30) |>
   add_audio_analysis()
 bigband <-
   get_playlist_audio_features(
-    "thesoundsofspotify",
+    "",
     "2cjIvuw4VVOQSeUAZfNiqY"
   ) |>
   slice(1:30) |>
