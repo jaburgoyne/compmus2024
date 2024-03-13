@@ -52,6 +52,7 @@ You can access the lecture notes at the following links.
   - [Week 8 · Chroma Features](./notes/compmus2024-w08.html)
   - [Week 9 · Structure Analysis · Self-Similarity Matrices](./notes/compmus2024-w09.html)
   - [Week 10 · Key and Chord Estimation](./notes/compmus2024-w10.html)
+  - [Week 11 · Novelty Functions and Tempograms](./notes/compmus2024-w11.html)
 
 ### What makes a good corpus?
 
